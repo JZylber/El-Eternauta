@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Eternauta</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 class="tourney-regular">El Eternauta</h1>
+    <div class="chores-container">
+      <h2 class="quicksand-regular">Tareas asignadas:</h2>
+      <div id="tareas-por-persona" class="tourney-regular"></div>
+    </div>
+    <form>
+      <div class="category">
+        <label class="quicksand-regular">Persona</label>
+        <select class="quicksand-regular" id="persona"></select>
+      </div>
+      <div class="category">
+        <label class="quicksand-regular">Lugar</label>
+        <select class="quicksand-regular" id="lugar"></select>
+      </div>
+      <div class="category">
+        <label class="quicksand-regular">Producto</label>
+        <input type="text" class="quicksand-regular" id="producto" />
+      </div>
+      <div class="quicksand-bold button" id="asignar">Asignar</div>
+    </form>
+    <div class="table-container">
+      <table>
+        <thead class="tourney-regular">
+          <tr>
+            <th>Persona</th>
+            <th>Lugar</th>
+            <th>Producto</th>
+          </tr>
+        </thead>
+        <tbody id="tareas" class="quicksand-regular"></tbody>
+      </table>
+    </div>
+  </body>
+</html>

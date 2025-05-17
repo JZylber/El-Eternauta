@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --rich-black: #0a0d17ff;
+  --white: #fbfeffff;
+  --columbia-blue: #cbe2e6ff;
+  --space-cadet: #161e3dff;
+  --cadet-gray: #9cb7bfff;
+}
+
+body {
+  padding: 0 20px;
+  background-color: var(--space-cadet);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.tourney-regular {
+  font-family: "Tourney", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.quicksand-regular {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.quicksand-bold {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h1 {
+  padding: 24px;
+  font-size: 88px;
+  text-align: center;
+  color: var(--white);
+}
+
+.chores-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  row-gap: 20px;
+  background-color: var(--rich-black);
+  border-radius: 5px;
+}
+
+.chores-container h2 {
+  font-size: 30px;
+  color: var(--white);
+}
+
+#tareas-por-persona {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 12px;
+}
+
+#tareas-por-persona div {
+  flex-basis: 0;
+  flex-grow: 1;
+  min-width: 100px;
+  max-width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 12px;
+}
+
+#tareas-por-persona div img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid var(--columbia-blue);
+}
+
+#tareas-por-persona div span {
+  font-size: 24px;
+  color: var(--white);
+  text-align: center;
+}
+
+form {
+  display: flex;
+  align-items: flex-end;
+  column-gap: 36px;
+  margin: 40px 0;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  flex-grow: 0.25;
+  flex-basis: 0;
+}
+
+.category label {
+  font-size: 20px;
+  color: var(--white);
+}
+
+.category input[type="text"],
+.category select {
+  min-height: 40px;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 20px;
+  padding: 5px;
+  background-color: var(--columbia-blue);
+  color: var(--rich-black);
+  border: none;
+  border-radius: 5px;
+}
+
+.button {
+  background-color: #f0f0f0;
+  border: 2px solid var(--columbia-blue);
+  border-radius: 5px;
+  padding: 0px 20px;
+  font-size: 20px;
+  box-sizing: border-box;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--space-cadet);
+  color: var(--white);
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 5px;
+  margin: 40px 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  height: fit-content;
+}
+
+table thead {
+  background-color: var(--columbia-blue);
+  color: var(--rich-black);
+  border-bottom: 2px solid var(--rich-black);
+}
+
+table thead tr th {
+  text-align: left;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 10px;
+}
+
+table tbody {
+  background-color: var(--white);
+  color: var(--rich-black);
+}
+
+table tbody tr:nth-child(even) {
+  background-color: var(--columbia-blue);
+}
+
+table tbody tr td {
+  font-size: 20px;
+  padding: 10px;
+}
