@@ -53,7 +53,6 @@ h1 {
   flex-direction: column;
   padding: 20px;
   row-gap: 20px;
-  background-color: var(--rich-black);
   border-radius: 5px;
 }
 
@@ -98,7 +97,6 @@ form {
   display: flex;
   align-items: flex-end;
   column-gap: 36px;
-  margin: 40px 0;
 }
 
 .category {
